@@ -34,5 +34,8 @@ llm_chain = LLMChain(
     memory=memory,
 )
 
-def answer(input):
+def get_answer(input):
     return llm_chain.predict(human_input=input)
+
+def get_history():
+    return memory.chat_memory.messages 
