@@ -1,0 +1,216 @@
+﻿Name: Matheus Galvão
+Profession: Software Developer
+Email: matheusgalvao@protonmail.com        
+Phone: (+351) 936 575 865        
+Country of Residence: Portugal
+Github: matheusgalvao1
+
+
+
+
+BRIEF PERSONAL AND PROFESSIONAL BIOGRAPHY:
+Currently residing in Portugal, I'm pursuing my Master's degree in Computer Science. With a specialisation in mobile development, I have gained valuable industry experience by constructing applications for Android and iOS platforms utilizing the Flutter framework. In parallel with my studies, I am actively engaged in the academic realm, where I am currently involved in research on Deep Learning with a particular focus on its application to financial markets as the central theme of my thesis.
+Driven by a strong passion for Data Science and Machine Learning engineering, my career aspirations revolve around creating impactful technologies powered by AI. I possess a natural inclination towards assuming leadership roles within teams, as I am a self-motivated individual with a diverse range of soft skills. My enthusiasm for disruptive technology and my ability to craft exceptional products fuel my dedication to this field.
+As a native Portuguese speaker, I possess excellent communication skills and demonstrate fluency in English. Additionally, I have intermediate proficiency in French and Italian, along with a foundational understanding of Spanish.
+
+
+PROFESSIONAL EXPERIENCE:
+
+
+Company: Websix 
+Period: 01/2021 – 07/2021
+Role: Mobile Developer (Flutter)
+Description: Development of on demand mobile applications for many industries and fields, using the Flutter Framework from Google, the apps were developed and integrated to local and online databases, SǪL and NoSǪL as Firebase Firestore, as well to APIs internal and external from the company. My main responsibilities were to design the applications user experience, Figma prototypes, develop the front-end and integrate with Firebase and APIs.
+
+
+Company: Polytechnical Institute of Bragança
+Period: 04/2023 – present 
+Role: AI Researcher
+Description: My role as a leading researcher in a project focused on predicting regional water consumption was to create solutions, manage data and develop models based on Deep Learning to predict future water consumption in given regions. Furthermore, such work required constant documentation of development, as well as academic writing.
+
+
+
+
+
+
+
+
+
+
+
+
+EDUCATION
+
+
+Course: Bachelor in Computer Science 
+Duration: 03/2019 – 07/2023
+University: Federal Technological University of Paraná (Brazil)
+Description: After four years of course, with the highest marks of my class (0.92 / 1), I got accepted to a double degree program in Portugal, being enrolled to a Master Degree in Informatics at the Polytechnic Institute of Bragança, to finish both courses at the same time and receiving two degrees. During my bachelor I was a mentor of Calculus to new students, experience which helped me to improve my knowledge of mathematics.
+
+
+Course: Master's in Informatics
+University: Polytechnic Institute of Bragança (Portugal)
+Description: My master's thesis is in the field of Artificial Intelligence, developing a Deep Learning model to forecast yields of the US Treasury Bond market.
+
+
+LANGUAGES PROFICIENCY
+
+
+Language: English
+Understanding: C2 
+Speaking: C2 
+Writing: C2
+
+
+Language: French 
+Understanding: B2 
+Speaking: B1 
+Writing: B1
+
+
+Language: Portuguese
+Understanding: Native
+Speaking: Native
+Writing: Native
+
+
+Language: Italian 
+Understanding: C1 
+Speaking: B1 
+Writing: B1
+
+
+Language: Spanish 
+Understanding: B2 
+Speaking: B1 
+Writing: A2
+
+
+
+
+CERTIFICATES
+
+
+TOEFL English C2, available at: https://drive.google.com/file/d/1UO7Kze-de-FCXrXySFd59N1txqtg5pVk/view?pli=1
+
+
+
+
+COURSES
+
+
+Course: Flutter Course
+Year: 2020
+Source: balta.io
+
+
+Course: French Intermediate course B1-B2
+Year: 2020
+Source: École Polytechnique (Coursera)
+
+
+Course: Machine Learning Course by Andrew Ng
+Year: 2020
+Source: Stanford (Coursera)
+
+
+Course: Neural Networks and Deep Learning
+Year: 2021
+Source: DeepLearning.ai
+
+
+Course: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
+Year: 2021
+Source: DeepLearning.ai
+
+
+
+
+PROGRAMMING LANGUAGES:
+
+
+* Python 
+* Dart 
+* Octave 
+* PHP 
+* CSS
+* JavaScript
+* C
+* Java 
+* SǪL 
+* HTML
+
+
+FRAMEWORKS:
+
+
+* Flutter 
+* PyTorch
+* TensorFlow
+* Langchain
+* FastAPI
+* NextJS
+
+
+OPERATIONAL SYSTEMS EXPERIENCE:
+Linux 
+MacOS
+Windows
+Android
+iOS
+
+
+TOOLS AND TECHNOLOGIES:
+Figma
+Firebase
+AWS
+Google Cloud
+Anaconda
+Insomnia 
+LaTeX
+Visual Studio Code 
+Git
+Github
+Gitlab
+Jupyter Notebook 
+Docker
+Postman 
+Octave
+
+
+DATABASES:
+MongoDB
+Firebase Firestore
+PostgreSQL
+SQLite
+MySQL
+
+
+INDEPENDENT PROJECTS INVOLVED:
+
+
+Name: Loan Simulator Mobile App 
+Year: 2021
+Description:
+In this application, people can simulate loans based on their preferences, personal information and banking conditions, as well to contact an employee to continue the loan service.
+Play Store Version: https://play.google.com/store/apps/details?id=com.bem_te_vi&pli=1
+New Unpublished Version: https://github.com/matheusgalvao1/btvcred
+
+
+Name: Password Manager Mobile App
+Year: 2021
+Description: This application has been developed in an academic environment for graduation purposes, it is an app for managing personal accounts and passwords where you can chose to store locally in your device or in the cloud.
+
+
+Github Repository: https://github.com/matheusgalvao1/app-totalpass
+
+
+Name: Online Shopping Mobile App
+Year: 2021
+Description: The third project is a mobile application for online orders to a local company, using digital catalogs. The app is also integrated to a third party web application where the company can manage the orders.
+Play Store: https://play.google.com/store/apps/details?id=br.com.gtop.app
+
+
+Name: Question Answering Machine
+Year: 2022
+Description: Developed as an academic project, the application integrates and evaluates pre-trained NLP models based on BERT and fine-tuned for the SQuAD dataset in order to build a question-answering machine. The project was developed in Python, using the PyTorch framework.
