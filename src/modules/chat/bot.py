@@ -5,12 +5,14 @@ from langchain.memory import ConversationBufferMemory
 import os
 from dotenv import load_dotenv
 
-load_dotenv('.env')
+import lorem
+
+load_dotenv(".env")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_API_ENV = os.getenv("PINECONE_API_ENV")
 
-with open('cv.txt', 'r') as file:
+with open("cv.txt", "r") as file:
     content = file.read()
 
 
@@ -34,8 +36,16 @@ llm_chain = LLMChain(
     memory=memory,
 )
 
-def get_answer(input):
-    return llm_chain.predict(human_input=input)
+
+def get_answer(input, testMode):
+    if testMode:
+        aux = lorem.paragraph()
+        memory.chat_memory.add_user_message(input)
+        memory.chat_memory.add_ai_message(aux)
+        return aux
+    else:
+        return llm_chain.predict(human_input=input)
+
 
 def get_history():
-    return memory.chat_memory.messages 
+    return memory.chat_memory.messages

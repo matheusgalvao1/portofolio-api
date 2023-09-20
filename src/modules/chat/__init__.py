@@ -5,8 +5,8 @@ chat_router = APIRouter(tags=["Chat"])
 
 
 @chat_router.post("/message/")
-async def message_endpoint(input: str = Form(...)):
-    output = get_answer(input)
+async def message_endpoint(input: str = Form(...), testMode: bool = Form(False)):
+    output = get_answer(input, testMode)
     return output
 
 
