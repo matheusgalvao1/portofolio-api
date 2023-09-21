@@ -8,6 +8,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the source code into the container
 COPY src/ ./src
+COPY .env ./
+COPY cv.txt ./
+
 # Expose the port on which the Uvicorn server will run
 EXPOSE 8000
 # Run the Uvicorn application 
