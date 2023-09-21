@@ -18,19 +18,14 @@ app.add_middleware(
 
 @app.on_event("startup")
 async def startup_db_client():
+    print("Connecting to MongoDB...")
     await connect_to_mongo()
+    print("Connected to MongoDB")
 
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
     await close_mongo_connection()
-
-
-@app.get("/")
-async def read_root(db=Depends(get_database)):
-    collection = db["example_collection"]
-    document = await collection.find_one({"key": "value"})
-    return document
 
 
 @app.get("/")
