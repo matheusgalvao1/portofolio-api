@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Form, HTTPException
 from src.models.chat import Chat, Message
-from src.modules.chat.bot import get_answer, get_history, start_new_chat, finish_chat
+from src.modules.chat.bot import get_answer, start_new_chat, finish_chat
 import src.db.mongo_chats as mongo_ops
 
 chat_router = APIRouter(tags=["Chat"])
@@ -61,22 +61,6 @@ async def add_message_to_chat(chat_id: str, message: str):
         raise e
 
 
-@chat_router.get("/get_chat/{chat_id}/", response_model=Chat)
-async def get_chat(chat_id: str):
-    inDB = await mongo_ops.get_chat(chat_id)
-    if inDB is None:
-        raise HTTPException(status_code=404, detail="Chat not found in DB")
-    local = get_history(chat_id)
-    if local is None:
-        raise HTTPException(status_code=404, detail="Chat not found locally")
-    if inDB.messages == local.messages:
-        return inDB
-    else:
-        raise HTTPException(
-            status_code=500, detail="Chat history mismatch locally and DB"
-        )
-
-
 @chat_router.get("/get_chat_db/{chat_id}/", response_model=Chat)
 async def get_chat_db(chat_id: str):
     chat = await mongo_ops.get_chat(chat_id)
@@ -85,9 +69,26 @@ async def get_chat_db(chat_id: str):
     return chat
 
 
+"""
+@chat_router.get("/get_chat/{chat_id}/", response_model=Chat)
+async def get_chat(chat_id: str):
+    inDB = await mongo_ops.get_chat(chat_id)
+    if inDB is None:
+        raise HTTPException(status_code=404, detail="Chat not found in DB")
+    local = get_history(chat_id)
+    if local is None:
+        raise HTTPException(status_code=404, detail="Chat not found locally")
+    if inDB.messages == local:
+        return inDB
+    else:
+        raise HTTPException(
+            status_code=500, detail="Chat history mismatch locally and DB"
+        )
+
 @chat_router.get("/get_chat_local/{chat_id}/", response_model=Chat)
 async def get_chat_local(chat_id: str):
     chat = get_history(chat_id)
     if chat is None:
         raise HTTPException(status_code=404, detail="Chat not found locally")
     return chat
+"""
