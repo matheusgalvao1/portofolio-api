@@ -56,6 +56,7 @@ def finish_chat(chat_id):
         return False
 
 
+# Can only get answer from a chat if it is in the instances dictionary, therefore started and not finished
 def get_answer(input, chat_id, testMode=False):
     # Retrieve the specific memory and llm_chain for the given chat_id
     if chat_id not in chat_instances:
