@@ -5,6 +5,7 @@ from langchain.memory import ConversationBufferMemory
 import os
 from dotenv import load_dotenv
 import lorem
+import asyncio
 
 load_dotenv(".env")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -32,6 +33,9 @@ chat_instances = {}
 
 
 def start_new_chat(chat_id):
+    if chat_id in chat_instances:
+        raise KeyError(f"Chat ID aready exists.")
+
     # Create a new instance of memory
     new_memory = ConversationBufferMemory(memory_key="chat_history")
 
@@ -46,6 +50,9 @@ def start_new_chat(chat_id):
     # Store the new instances in the dictionary
     chat_instances[chat_id] = {"memory": new_memory, "llm_chain": new_llm_chain}
 
+    # Schedule the destruction in 3 hours to free resources
+    asyncio.create_task(finish_chat_timer(chat_id))
+
 
 def finish_chat(chat_id):
     # Remove the instance from the dictionary to release resources
@@ -54,6 +61,16 @@ def finish_chat(chat_id):
         return True
     else:
         return False
+
+
+# Async function to destroy an instance
+async def finish_chat_timer(chat_id):
+    await asyncio.sleep(10800)  # wait for 3 hours
+    if chat_id in chat_instances:
+        del chat_instances[chat_id]
+        print(f"Destroyed instance with chat_id {chat_id}")
+    else:
+        print(f"Instance with chat_id {chat_id} does not exist.")
 
 
 # Can only get answer from a chat if it is in the instances dictionary, therefore started and not finished
