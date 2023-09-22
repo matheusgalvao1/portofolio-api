@@ -97,6 +97,10 @@ def get_answer(input, chat_id, testMode=False):
         return llm_chain.predict(human_input=input)
 
 
+def exist_instance(chat_id):
+    return chat_id in chat_instances
+
+
 """
 def get_history(chat_id):
     messages = chat_instances[chat_id]["memory"].chat_memory.messages
