@@ -13,7 +13,7 @@ async def create_endpoint():
     return {"chat_id": chat_id}
 
 
-@chat_router.post("/finish/{chat_id}/")
+@chat_router.post("/finish/")
 async def delete_endpoint(chat_id: str):
     res = finish_chat(chat_id)
     if res:
@@ -22,7 +22,7 @@ async def delete_endpoint(chat_id: str):
         raise HTTPException(status_code=404, detail="Chat not found")
 
 
-@chat_router.post("/send_message/{chat_id}/", response_model=Chat)
+@chat_router.post("/send_message/", response_model=Chat)
 async def add_message_to_chat(chat_id: str, message: str):
     human_message = Message(content=message, author="Human")
     try:
@@ -51,7 +51,7 @@ async def add_message_to_chat(chat_id: str, message: str):
         raise e
 
 
-@chat_router.get("/get_chat_db/{chat_id}/", response_model=Chat)
+@chat_router.get("/get_chat_db/", response_model=Chat)
 async def get_chat_db(chat_id: str):
     try:
         chat = await mongo_ops.get_chat(chat_id)
