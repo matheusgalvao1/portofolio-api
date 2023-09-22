@@ -6,11 +6,11 @@ import src.db.mongo_chats as mongo_ops
 chat_router = APIRouter(tags=["Chat"])
 
 
-@chat_router.post("/create/", response_model=Chat)
+@chat_router.post("/create/")
 async def create_endpoint():
     chat_id = await mongo_ops.add_new_chat()
     start_new_chat(chat_id)
-    return {"chat_id": chat_id, "messages": []}
+    return {"chat_id": chat_id}
 
 
 @chat_router.post("/finish/{chat_id}/")
