@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Form, HTTPException
 from src.models.chat import Chat, Message
-from src.modules.chat.bot import get_answer, get_history
+from src.modules.chat.bot import get_answer, get_history, start_new_chat
 import src.db.mongo_chats as mongo_ops
 
 chat_router = APIRouter(tags=["Chat"])
@@ -21,19 +21,33 @@ async def history_endpoint():
 @chat_router.post("/create/", response_model=Chat)
 async def create_endpoint():
     chat_id = await mongo_ops.add_new_chat()
+    start_new_chat(chat_id)
     return {"chat_id": chat_id, "messages": []}
 
 
-@chat_router.post("/add_message/{chat_id}/", response_model=Chat)
-async def add_message_to_chat(chat_id: str, message: Message):
-    success = await mongo_ops.add_message_to_chat(chat_id, message)
-    if not success:
-        raise HTTPException(status_code=404, detail="Chat not found")
+@chat_router.post("/send_message/{chat_id}/", response_model=Chat)
+async def add_message_to_chat(chat_id: str, human_message: Message):
+    try:
+        # Add User Message to mongo
+        if not await mongo_ops.add_message_to_chat(chat_id, human_message):
+            raise HTTPException(status_code=404, detail="Chat not found")
 
-    chat = await mongo_ops.get_chat(chat_id)
-    if chat is None:
-        raise HTTPException(status_code=404, detail="Chat not found")
-    return chat
+        # Generate AI response
+        ai_content = get_answer(human_message.content, chat_id, False)
+
+        # Add AI Message to mongo
+        ai_message = Message(content=ai_content, author="AI")
+        if not await mongo_ops.add_message_to_chat(chat_id, ai_message):
+            raise HTTPException(status_code=404, detail="Chat not found")
+
+        # Retrieve and return the updated chat
+        chat = await mongo_ops.get_chat(chat_id)
+        if chat is None:
+            raise HTTPException(status_code=404, detail="Chat not found")
+
+        return chat
+    except HTTPException as e:
+        raise e
 
 
 @chat_router.get("/get_chat/{chat_id}/", response_model=Chat)
