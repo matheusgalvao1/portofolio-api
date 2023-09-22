@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Form, HTTPException
 from src.models.chat import Chat, Message
-from src.modules.chat.bot import get_answer, get_history, start_new_chat
+from src.modules.chat.bot import get_answer, get_history, start_new_chat, finish_chat
 import src.db.mongo_chats as mongo_ops
 
 chat_router = APIRouter(tags=["Chat"])
 
-
+"""
 @chat_router.post("/message/")
 async def message_endpoint(input: str = Form(...), testMode: bool = Form(False)):
     output = get_answer(input, testMode)
@@ -16,6 +16,7 @@ async def message_endpoint(input: str = Form(...), testMode: bool = Form(False))
 async def history_endpoint():
     history = get_history()
     return history
+"""
 
 
 @chat_router.post("/create/", response_model=Chat)
@@ -25,8 +26,18 @@ async def create_endpoint():
     return {"chat_id": chat_id, "messages": []}
 
 
+@chat_router.post("/finish/{chat_id}/")
+async def delete_endpoint(chat_id: str):
+    res = finish_chat(chat_id)
+    if res:
+        return {"message": "Chat finished"}
+    else:
+        raise HTTPException(status_code=404, detail="Chat not found")
+
+
 @chat_router.post("/send_message/{chat_id}/", response_model=Chat)
-async def add_message_to_chat(chat_id: str, human_message: Message):
+async def add_message_to_chat(chat_id: str, message: str):
+    human_message = Message(content=message, author="Human")
     try:
         # Add User Message to mongo
         if not await mongo_ops.add_message_to_chat(chat_id, human_message):
@@ -50,7 +61,7 @@ async def add_message_to_chat(chat_id: str, human_message: Message):
         raise e
 
 
-@chat_router.get("/get_chat/{chat_id}/", response_model=Chat)
+@chat_router.get("/get_chat_db/{chat_id}/", response_model=Chat)
 async def get_chat(chat_id: str):
     chat = await mongo_ops.get_chat(chat_id)
     if chat is None:

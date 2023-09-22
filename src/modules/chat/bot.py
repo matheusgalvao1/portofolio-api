@@ -51,6 +51,9 @@ def finish_chat(chat_id):
     # Remove the instance from the dictionary to release resources
     if chat_id in chat_instances:
         del chat_instances[chat_id]
+        return True
+    else:
+        return False
 
 
 def get_answer(input, chat_id, testMode=False):
