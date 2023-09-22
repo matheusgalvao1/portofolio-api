@@ -53,7 +53,10 @@ async def add_message_to_chat(chat_id: str, message: str):
 
 @chat_router.get("/get_chat_db/{chat_id}/", response_model=Chat)
 async def get_chat_db(chat_id: str):
-    chat = await mongo_ops.get_chat(chat_id)
+    try:
+        chat = await mongo_ops.get_chat(chat_id)
+    except Exception as e:
+        raise HTTPException(status_code=404, detail="Chat not found in DB")
     if chat is None:
         raise HTTPException(status_code=404, detail="Chat not found in DB")
     return chat
