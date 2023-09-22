@@ -15,8 +15,7 @@ class MongoDB:
         return cls.client[alias]
 
 
-MONGO_URI = "mongodb://localhost:27018/portofolio"  # No Docker
-# MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/") # Docker
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27018/")
 
 
 async def connect_to_mongo():
