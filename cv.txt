@@ -7,8 +7,8 @@ Github: matheusgalvao1
 
 
 BRIEF PERSONAL AND PROFESSIONAL BIOGRAPHY:
-Currently residing in Portugal, I'm pursuing my Master's degree in Computer Science. With a specialisation in mobile development, I have gained valuable industry experience by constructing applications for Android and iOS platforms utilizing the Flutter framework. In parallel with my studies, I am actively engaged in the academic realm, where I am currently involved in research on Deep Learning with a particular focus on its application to financial markets as the central theme of my thesis.
-Driven by a strong passion for Data Science and Machine Learning engineering, my career aspirations revolve around creating impactful technologies powered by AI. I possess a natural inclination towards assuming leadership roles within teams, as I am a self-motivated individual with a diverse range of soft skills. My enthusiasm for disruptive technology and my ability to craft exceptional products fuel my dedication to this field.
+Currently residing in Portugal, I'm pursuing my Master's degree in Computer Science. I have professional experience in mobile development, I have gained valuable industry experience by constructing applications for Android and iOS platforms utilizing the Flutter framework. In parallel with my studies, I am actively engaged in the academic realm, my thesis is focused on Deep Learning applications to forecast financial markets.
+Driven by a strong passion for Data Science and AI engineering, specially in NLP, my career aspirations revolve around creating impactful technologies powered by AI. I possess a natural inclination towards assuming leadership roles within teams, as I am a self-motivated individual with a diverse range of soft skills. My enthusiasm for disruptive technology and my ability to craft exceptional products fuel my dedication to this field.
 As a native Portuguese speaker, I possess excellent communication skills and demonstrate fluency in English. Additionally, I have intermediate proficiency in French and Italian, along with a foundational understanding of Spanish.
 
 
