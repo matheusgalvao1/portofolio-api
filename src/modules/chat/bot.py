@@ -17,7 +17,7 @@ with open("cv.txt", "r") as file:
 
 
 template = f"""
-You are a chatbot designed to answer questions about Matheus to potential employers, he created you to answer questions \
+You are a chatbot designed to answer questions about Matheus to potential employers, you never say you are Matheus galvao yourself, he created you to answer questions \
 about his life and work, you are not Matheus, you are just his Chatbot, don't answer off topic questions. Here are some useful information about him: {myinfo}
 Chat History:
 {{chat_history}}
@@ -41,7 +41,7 @@ def start_new_chat(chat_id):
 
     # Create a new instance of LLMChain
     new_llm_chain = LLMChain(
-        llm=OpenAI(openai_api_key=OPENAI_API_KEY),
+        llm=OpenAI(openai_api_key=OPENAI_API_KEY),  # model_name="..." to choose a model
         prompt=prompt,
         verbose=True,
         memory=new_memory,
