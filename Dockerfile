@@ -10,7 +10,6 @@ RUN python -m venv /app/venv
 RUN /app/venv/bin/pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the source code into the container
 COPY src/ ./src
-COPY .env ./
 COPY cv.txt ./
 
 # Expose the port on which the Uvicorn server will run
