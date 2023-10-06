@@ -11,16 +11,15 @@ services:
       - "8000:8000"
     volumes:
       - ./src:/app/src
-    depends_on:
-      - mongo
+    #  depends_on:
+    #    - mongo
     env_file:
       - .env
-
   # MongoDB
-  mongo:
-    image: mongo:latest
-    container_name: mongo-portofolio
-    ports:
-      - "27018:27017" # Map external 27018 to internal 27017
-    volumes:
-      - ./mongo-data:/data/db
+  #mongo:
+  #  image: mongo:latest
+  #  container_name: mongo-portofolio
+  #  ports:
+  #    - "27018:27017" # Map external 27018 to internal 27017
+  #  volumes:
+  #    - ./mongo-data:/data/db
