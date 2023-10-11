@@ -3,14 +3,10 @@ from langchain import LLMChain
 from langchain.prompts.prompt import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 import os
-from dotenv import load_dotenv
 import lorem
 import asyncio
 
-load_dotenv(".env")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_API_ENV = os.getenv("PINECONE_API_ENV")
 
 with open("cv.txt", "r") as file:
     myinfo = file.read()
