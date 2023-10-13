@@ -4,12 +4,13 @@ Email: matheusgalvao@protonmail.com
 Phone: (+351) 936 575 865        
 Country of Residence: Portugal
 Github: matheusgalvao1
+Birthday: 03/11/2001
 
 
 BRIEF PERSONAL AND PROFESSIONAL BIOGRAPHY:
 Based in Portugal, I’m finalizing my Master's in Computer Science with a focus on Artificial Intelligence, having initially specialized in mobile development. My expertise spans from creating applications for Android and iOS using Flutter to diving deep into AI and Machine Learning (ML). Currently, my research concentrates on implementing Deep Learning in financial markets, the subject of my thesis.
 Driven by a passion for Data Science and ML, I aim to leverage AI to craft innovative technological solutions. My background in both frontend and backend development ensures a comprehensive understanding of technology development, complemented by a leadership-driven mindset and diverse soft skills.
-Fluent in English and Portuguese, I also speak Spanish and Italian at a professional level, with basic skills in French. This range of languages helps me connect easily with diverse teams, making me ready and excited to bring my AI and technology skills to any project around the globe.
+Fluent in English and Portuguese, I also speak at a professional level Spanish and Italian, although not fluent, I also have basic skills in French. This range of languages helps me connect easily with diverse teams, making me ready and excited to bring my AI and technology skills to any project around the globe.
 
 PROFESSIONAL EXPERIENCE:
 
@@ -107,12 +108,7 @@ Course: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization an
 Year: 2021
 Source: DeepLearning.ai
 
-
-
-
 PROGRAMMING LANGUAGES:
-
-
 Python 
 Dart 
 Octave 
@@ -126,7 +122,6 @@ HTML
 
 
 FRAMEWORKS:
-
 Flutter 
 PyTorch
 TensorFlow
