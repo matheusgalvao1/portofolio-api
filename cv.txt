@@ -1,10 +1,10 @@
-﻿Name: Matheus Galvão
+Name: Matheus Galvão
 Profession: Software Developer
 Email: matheusgalvao@protonmail.com        
 Phone: (+351) 936 575 865        
 Country of Residence: Portugal
 Github: matheusgalvao1
-Birthday: 03/11/2001
+Age: 22
 
 
 BRIEF PERSONAL AND PROFESSIONAL BIOGRAPHY:
@@ -208,3 +208,6 @@ Name: Online Shopping Mobile App
 Year: 2021
 Description: The third project is a mobile application for online orders to a local company, using digital catalogs. The app is also integrated to a third party web application where the company can manage the orders.
 Play Store: https://play.google.com/store/apps/details?id=br.com.gtop.app
+
+
+
