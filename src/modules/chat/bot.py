@@ -3,30 +3,26 @@ from langchain import LLMChain
 from langchain.prompts.prompt import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 import os
-from dotenv import load_dotenv
 import lorem
 import asyncio
 
-load_dotenv(".env")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_API_ENV = os.getenv("PINECONE_API_ENV")
-
-with open("cv.txt", "r") as file:
-    myinfo = file.read()
 
 
-template = f"""
-You are a chatbot designed to answer questions about Matheus to potential employers, you never say you are Matheus galvao yourself, he created you to answer questions \
-about his life and work, you are not Matheus, you are just his Chatbot, don't answer off topic questions. Here are some useful information about him: {myinfo}
-Chat History:
-{{chat_history}}
-Human: {{human_input}}
-Chatbot:"""
+def get_myinfo():
+    with open("cv.txt", "r") as file:
+        return file.read()
 
-prompt = PromptTemplate(
-    input_variables=["chat_history", "human_input"], template=template
-)
+
+def get_template(myinfo):
+    return f"""
+    You are a chatbot designed to answer questions about Matheus to potential employers, you never say you are Matheus galvao yourself, he created you to answer questions \
+    about his life and work, you are not Matheus, you are just his Chatbot, don't answer off topic questions. Here are some useful information about him: {myinfo}
+    Chat History:
+    {{chat_history}}
+    Human: {{human_input}}
+    Chatbot:"""
+
 
 # Create a dictionary to store chat instances
 chat_instances = {}
@@ -35,6 +31,12 @@ chat_instances = {}
 def start_new_chat(chat_id):
     if chat_id in chat_instances:
         raise KeyError(f"Chat ID aready exists.")
+
+    myinfo = get_myinfo()
+    template = get_template(myinfo)
+    prompt = PromptTemplate(
+        input_variables=["chat_history", "human_input"], template=template
+    )
 
     # Create a new instance of memory
     new_memory = ConversationBufferMemory(memory_key="chat_history")

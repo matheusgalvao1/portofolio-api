@@ -1,7 +1,7 @@
 version: '3'
 services:
-  # FastAPI application
   fastapi-app:
+    platform: linux/amd64
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,15 +11,3 @@ services:
       - "8000:8000"
     volumes:
       - ./src:/app/src
-    #  depends_on:
-    #    - mongo
-    env_file:
-      - .env
-  # MongoDB
-  #mongo:
-  #  image: mongo:latest
-  #  container_name: mongo-portofolio
-  #  ports:
-  #    - "27018:27017" # Map external 27018 to internal 27017
-  #  volumes:
-  #    - ./mongo-data:/data/db

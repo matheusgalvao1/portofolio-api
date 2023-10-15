@@ -1,19 +1,18 @@
-﻿Name: Matheus Galvão
+Name: Matheus Galvão
 Profession: Software Developer
 Email: matheusgalvao@protonmail.com        
 Phone: (+351) 936 575 865        
 Country of Residence: Portugal
 Github: matheusgalvao1
+Age: 22
 
 
 BRIEF PERSONAL AND PROFESSIONAL BIOGRAPHY:
-Currently residing in Portugal, I'm pursuing my Master's degree in Computer Science. I have professional experience in mobile development, I have gained valuable industry experience by constructing applications for Android and iOS platforms utilizing the Flutter framework. In parallel with my studies, I am actively engaged in the academic realm, my thesis is focused on Deep Learning applications to forecast financial markets.
-Driven by a strong passion for Data Science and AI engineering, specially in NLP, my career aspirations revolve around creating impactful technologies powered by AI. I possess a natural inclination towards assuming leadership roles within teams, as I am a self-motivated individual with a diverse range of soft skills. My enthusiasm for disruptive technology and my ability to craft exceptional products fuel my dedication to this field.
-As a native Portuguese speaker, I possess excellent communication skills and demonstrate fluency in English. Additionally, I have intermediate proficiency in French and Italian, along with a foundational understanding of Spanish.
-
+Based in Portugal, I’m finalizing my Master's in Computer Science with a focus on Artificial Intelligence, having initially specialized in mobile development. My expertise spans from creating applications for Android and iOS using Flutter to diving deep into AI and Machine Learning (ML). Currently, my research concentrates on implementing Deep Learning in financial markets, the subject of my thesis.
+Driven by a passion for Data Science and ML, I aim to leverage AI to craft innovative technological solutions. My background in both frontend and backend development ensures a comprehensive understanding of technology development, complemented by a leadership-driven mindset and diverse soft skills.
+Fluent in English and Portuguese, I also speak at a professional level Spanish and Italian, although not fluent, I also have basic skills in French. This range of languages helps me connect easily with diverse teams, making me ready and excited to bring my AI and technology skills to any project around the globe.
 
 PROFESSIONAL EXPERIENCE:
-
 
 Company: Websix 
 Period: 01/2021 – 07/2021
@@ -69,7 +68,7 @@ Writing: B1
 Language: Spanish 
 Understanding: B2 
 Speaking: B1 
-Writing: A2
+Writing: B1
 
 
 
@@ -109,12 +108,7 @@ Course: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization an
 Year: 2021
 Source: DeepLearning.ai
 
-
-
-
 PROGRAMMING LANGUAGES:
-
-
 Python 
 Dart 
 Octave 
@@ -128,7 +122,6 @@ HTML
 
 
 FRAMEWORKS:
-
 Flutter 
 PyTorch
 TensorFlow
@@ -171,7 +164,31 @@ SQLite
 MySQL
 
 
-INDEPENDENT PROJECTS INVOLVED:
+AI Projects:
+
+Name: LLM Chatbot to answer question about my CV
+Year: 2023
+Description: 
+This project delivers an AI chatbot based on gpt-3.5 created to answer questions about my professional experience and skills, it was prompt engineered using Langchain, integrated to a FastAPI, which can be accessed through a web interface developed in React.
+Api repository: https://github.com/matheusgalvao1/portofolio-api
+Front-end repository: https://github.com/matheusgalvao1/portofolio-web
+
+Name: Bond Yields Forecasting using LSTMs
+Year: 2023
+Description: 
+Developed as my Master Thesis on the application of Neural Networks to financial
+markets, this project encompasses a whole data science project, from data collecting and processing, development of multiple LSTM networks, hyperparameter tuning, and evaluation of results.
+Available at: https://gitlab.estig.ipb.pt/mi_matheus/nn-forecast
+Thesis: https://drive.google.com/file/d/1B5epId2lhQLVH46xrL-QEka5swJpf1od/view? usp=sharing
+
+Name: Question Answering Machine
+Year: 2022
+Description: 
+As an academic project for my Masters, I developed a Question Answering Machine
+by loading pre-trained language models from HuggingFace, the goal of the project was to achieve the best performance possible on the SQuAD 2.0 dataset. The project was a success, achieving a performance of over 93%, the best in class. 
+Available at: https://github.com/matheusgalvao1/si-project
+
+MOBILE Projects:
 
 Name: Loan Simulator Mobile App 
 Year: 2021
@@ -184,8 +201,6 @@ New Unpublished Version: https://github.com/matheusgalvao1/btvcred
 Name: Password Manager Mobile App
 Year: 2021
 Description: This application has been developed in an academic environment for graduation purposes, it is an app for managing personal accounts and passwords where you can chose to store locally in your device or in the cloud.
-
-
 Github Repository: https://github.com/matheusgalvao1/app-totalpass
 
 
@@ -195,6 +210,4 @@ Description: The third project is a mobile application for online orders to a lo
 Play Store: https://play.google.com/store/apps/details?id=br.com.gtop.app
 
 
-Name: Question Answering Machine
-Year: 2022
-Description: Developed as an academic project, the application integrates and evaluates pre-trained NLP models based on BERT and fine-tuned for the SQuAD dataset in order to build a question-answering machine. The project was developed in Python, using the PyTorch framework to fine-tune LLM models from the HuggingFace repository.
+
