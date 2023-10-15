@@ -29,7 +29,7 @@ if not all([mongo_user, mongo_pass, mongo_uri_template]):
 escaped_user = quote_plus(mongo_user)
 escaped_pass = quote_plus(mongo_pass)
 MONGO_URI = mongo_uri_template.format(escaped_user, escaped_pass)
-print("MONGO_URI:", MONGO_URI)
+# print("MONGO_URI:", MONGO_URI)
 # MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27018/")
 
 
