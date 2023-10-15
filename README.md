@@ -14,5 +14,6 @@ docker tag api-portofolio-image mathintosh/portofolioapi:<tag>
 docker login // if necessary
 docker push mathintosh/portofolioapi:<tag>
 
-
-
+# What is missing in Github?
+google_key.json
+.env
