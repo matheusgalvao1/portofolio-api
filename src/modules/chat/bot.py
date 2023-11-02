@@ -2,6 +2,7 @@ from langchain.llms import OpenAI
 from langchain import LLMChain
 from langchain.prompts.prompt import PromptTemplate
 from langchain.memory import ConversationBufferMemory
+from langchain.chat_models import ChatOpenAI
 import os
 import lorem
 import asyncio
@@ -43,7 +44,7 @@ def start_new_chat(chat_id):
 
     # Create a new instance of LLMChain
     new_llm_chain = LLMChain(
-        llm=OpenAI(openai_api_key=OPENAI_API_KEY),  # model_name="..." to choose a model
+        llm=ChatOpenAI(openai_api_key=OPENAI_API_KEY, model_name="gpt-3.5-turbo"),
         prompt=prompt,
         verbose=True,
         memory=new_memory,
