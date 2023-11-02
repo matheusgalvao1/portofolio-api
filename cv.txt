@@ -4,48 +4,35 @@ Email: matheusgalvao@protonmail.com
 Phone: (+351) 936 575 865        
 Country of Residence: Portugal
 Github: matheusgalvao1
+Dockerhub: mathintosh
 Age: 22
 
 
 BRIEF PERSONAL AND PROFESSIONAL BIOGRAPHY:
-Based in Portugal, I’m finalizing my Master's in Computer Science with a focus on Artificial Intelligence, having initially specialized in mobile development. My expertise spans from creating applications for Android and iOS using Flutter to diving deep into AI and Machine Learning (ML). Currently, my research concentrates on implementing Deep Learning in financial markets, the subject of my thesis.
-Driven by a passion for Data Science and ML, I aim to leverage AI to craft innovative technological solutions. My background in both frontend and backend development ensures a comprehensive understanding of technology development, complemented by a leadership-driven mindset and diverse soft skills.
-Fluent in English and Portuguese, I also speak at a professional level Spanish and Italian, although not fluent, I also have basic skills in French. This range of languages helps me connect easily with diverse teams, making me ready and excited to bring my AI and technology skills to any project around the globe.
-
-PROFESSIONAL EXPERIENCE:
-
-Company: Websix 
-Period: 01/2021 – 07/2021
-Role: Mobile Developer (Flutter)
-Description: Development of on demand mobile applications for many industries and fields, using the Flutter Framework from Google, the apps were developed and integrated to local and online databases, SǪL and NoSǪL as Firebase Firestore, as well to APIs internal and external from the company. My main responsibilities were to design the applications user experience, Figma prototypes, develop the front-end and integrate with Firebase and APIs.
-
-
-Company: Polytechnical Institute of Bragança
-Period: 04/2023 – present 
-Role: AI Researcher
-Description: My role as a leading researcher in a project focused on predicting regional water consumption was to create solutions, manage data and develop models based on Deep Learning to predict future water consumption in given regions. Furthermore, such work required constant documentation of development, as well as academic writing.
-
-EDUCATION
-
-Course: Bachelor in Computer Science 
-Duration: 03/2019 – 07/2023
-University: Federal Technological University of Paraná (Brazil)
-Description: After four years of course, with the highest marks of my class (0.92 / 1), I got accepted to a double degree program in Portugal, being enrolled to a Master Degree in Informatics at the Polytechnic Institute of Bragança, to finish both courses at the same time and receiving two degrees. During my bachelor I was a mentor of Calculus to new students, experience which helped me to improve my knowledge of mathematics.
-
-
-Course: Master's in Informatics
-University: Polytechnic Institute of Bragança (Portugal)
-Description: My master's thesis is in the field of Artificial Intelligence, developing a Deep Learning model to forecast yields of the US Treasury Bond market.
-
+Based in Portugal, I am Software Developer espcialized in AI with a completed Masters Degree in Computer Science. I possess 2 years of experience in AI, but also multiple years of front-end and back-end development, majorly for Mobile Products and Web Platforms, building a robust and wide experience with Cloud and Databases.
+My background working with teams in data science, frontend and backend development ensures a comprehensive understanding of technology development, complemented by a leadership-driven mindset and diverse soft skills, such as advanced communication with people using 4 different languages, including English, Spanish, Portuguese and Italian. 
+I am fluent in English and Portuguese, I also have professional level skills in Spanish and Italian. This range of languages helps me connect easily with diverse teams, making me ready and excited to bring my AI and technology skills to any project around the globe.
 
 LANGUAGES PROFICIENCY
-
-
 Language: English
 Understanding: C2 
 Speaking: C2 
 Writing: C2
 
+Language: Portuguese
+Understanding: Native
+Speaking: Native
+Writing: Native
+
+Language: Italian 
+Understanding: C1 
+Speaking: B1 
+Writing: B1
+
+Language: Spanish 
+Understanding: B2 
+Speaking: B1 
+Writing: B1
 
 Language: French 
 Understanding: B2 
@@ -53,33 +40,34 @@ Speaking: B1
 Writing: B1
 
 
-Language: Portuguese
-Understanding: Native
-Speaking: Native
-Writing: Native
+HOBBIES:
+Playing tennis, outdoor activities, reading books in foreign languages, cooking, classic movies and discovering new technologies
 
+PROFESSIONAL EXPERIENCE:
+Company: Websix 
+Period: 01/2021 – 07/2021
+Role: Mobile Developer (Flutter)
+Description: Development of on demand mobile applications for many industries and fields, using the Flutter Framework from Google, the apps were developed and integrated to local and online databases, SǪL and NoSǪL as Firebase Firestore, as well to APIs internal and external from the company. My main responsibilities were to design the applications user experience, Figma prototypes, develop the front-end and integrate with Firebase and APIs.
 
-Language: Italian 
-Understanding: C1 
-Speaking: B1 
-Writing: B1
+Company: Research Centre in Digitalization and Intelligent Robotics
+Period: 04/2023 – present 
+Role: AI Researcher
+Description: My role as a leading researcher in a project focused on predicting regional water consumption was to create solutions, manage data and develop models based on Deep Learning to predict future water consumption in given regions. Furthermore, such work required constant documentation of development, as well as academic writing.
 
+EDUCATION
+Course: Bachelor in Computer Science 
+Duration: 03/2019 – 07/2021
+University: Federal Technological University of Paraná (Brazil)
+Description: After four years of course, with the highest marks of my class (0.92 / 1), I got accepted to a double degree program in Portugal, being enrolled to a Master Degree in Informatics at the Polytechnic Institute of Bragança, to finish both courses at the same time and receiving two degrees. During my bachelor I was a mentor of Calculus to new students, experience which helped me to improve my knowledge of mathematics.
 
-Language: Spanish 
-Understanding: B2 
-Speaking: B1 
-Writing: B1
-
-
+Course: Master's in Informatics
+Duration: 07/2021 – 07/2023
+University: Polytechnic Institute of Bragança (Portugal)
+Description: My master's thesis was in the field of Artificial Intelligence, developing a Recurrent Neural Network model to forecast yields of the US Treasury Bond market.
 
 
 CERTIFICATES
-
-
 TOEFL English C2, available at: https://drive.google.com/file/d/1UO7Kze-de-FCXrXySFd59N1txqtg5pVk/view?pli=1
-
-
-
 
 COURSES
 
@@ -173,13 +161,18 @@ This project delivers an AI chatbot based on gpt-3.5 created to answer questions
 Api repository: https://github.com/matheusgalvao1/portofolio-api
 Front-end repository: https://github.com/matheusgalvao1/portofolio-web
 
+Name: PandIA
+Year: 2023
+Description: 
+Developed as a Portuguese public funded research project, the project focused on the prediction of Water Consumption in Urban Areas using Neural Networks and several different frameworks for both back-end and front-end. Producing a web interface to control a consumption model made in PyTorch. The work finally yielded multiple scientific articles in well known European Conferences.
+
 Name: Bond Yields Forecasting using LSTMs
 Year: 2023
 Description: 
 Developed as my Master Thesis on the application of Neural Networks to financial
-markets, this project encompasses a whole data science project, from data collecting and processing, development of multiple LSTM networks, hyperparameter tuning, and evaluation of results.
+markets, this project developed a RNN model to predict future variables using macroeconomics, being a complete data science project, collecting and processing its own data, but also development multiple LSTM networks,with hyperparameter tuning and evaluation of results.
 Available at: https://gitlab.estig.ipb.pt/mi_matheus/nn-forecast
-Thesis: https://drive.google.com/file/d/1B5epId2lhQLVH46xrL-QEka5swJpf1od/view? usp=sharing
+Thesis Paper: https://drive.google.com/file/d/1B5epId2lhQLVH46xrL-QEka5swJpf1od/view? usp=sharing
 
 Name: Question Answering Machine
 Year: 2022
